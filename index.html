@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children's Pizza Preferences</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f3f4f6;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+        .card.hidden {
+            display: none;
+        }
+        .label {
+            font-weight: 600;
+            color: #374151;
+            font-size: 0.875rem;
+        }
+        .value {
+            color: #1f2937;
+            font-size: 0.875rem;
+            word-break: break-word;
+        }
+        .link {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 390px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-xl font-bold text-gray-800 mb-4">Children's Pizza Preferences</h1>
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search by name or pizza preference...">
+        
+        <div class="card" data-name="Meher Vanjani" data-pizza="[Cheese / Veg] : Simply Cheese">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Meher Vanjani</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Cheese / Veg] : Simply Cheese</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">-</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6588589573" class="value link">88589573</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6588589573" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Kiyu" data-pizza="[Cheese / Veg] : Simply Cheese">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Kiyu</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Cheese / Veg] : Simply Cheese</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">Allergic to mushrooms and spice</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6590182777" class="value link">90182777</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6590182777" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Amber Sunderland" data-pizza="[Cheese / Veg] : Simply Cheese">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Amber Sunderland</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Cheese / Veg] : Simply Cheese</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">-</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6585150825" class="value link">85150825</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6585150825" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Sadie Blondel" data-pizza="[Chicken] : Hawaiian">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Sadie Blondel</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Chicken] : Hawaiian</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">-</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6581514451" class="value link">81514451</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6581514451" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Chinmayi" data-pizza="[Vegetarian] : Very Veggie">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Chinmayi</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Vegetarian] : Very Veggie</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">-</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6591146155" class="value link">91146155</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6591146155" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Rose" data-pizza="[Beef] : Classic Pepperoni">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Rose</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Beef] : Classic Pepperoni</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">-</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6580814025" class="value link">80814025</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6580814025" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Sharanya" data-pizza="[Chicken] : Hawaiian">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Sharanya</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Chicken] : Hawaiian</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">-</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6598310652" class="value link">98310652</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6598310652" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Reyansh" data-pizza="[Cheese / Veg] : Simply Cheese">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Reyansh</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Cheese / Veg] : Simply Cheese</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">-</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6596546495" class="value link">96546495</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6596546495" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Svastika Rajaraman" data-pizza="[Cheese / Veg] : Simply Cheese">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Svastika Rajaraman</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Cheese / Veg] : Simply Cheese</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">Vegetarians</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6598489816" class="value link">98489816</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6598489816" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Alisa Paunina" data-pizza="[Cheese / Veg] : Simply Cheese">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Alisa Paunina</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Cheese / Veg] : Simply Cheese</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">is allergic to honey and nuts</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6591718707" class="value link">91718707</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6591718707" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Deeba Nawani" data-pizza="[Chicken] : Chicken Pepperoni">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Deeba Nawani</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Chicken] : Chicken Pepperoni</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">-</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6584990296" class="value link">84990296</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6584990296" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Siya Mahajan" data-pizza="[Cheese / Veg] : Simply Cheese">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Siya Mahajan</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Cheese / Veg] : Simply Cheese</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">She is vegetarian</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6583436287" class="value link">83436287</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6583436287" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Shanaya Mitra" data-pizza="[Beef] : Classic Pepperoni">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Shanaya Mitra</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Beef] : Classic Pepperoni</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">No</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6591124242" class="value link">91124242</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6591124242" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+
+        <div class="card" data-name="Ayana Menon" data-pizza="[Beef] : Classic Pepperoni">
+            <div class="mb-2">
+                <span class="label">Name:</span> <span class="value">Ayana Menon</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Pizza Preference:</span> <span class="value">[Beef] : Classic Pepperoni</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Additional Info:</span> <span class="value">-</span>
+            </div>
+            <div class="mb-2">
+                <span class="label">Emergency Contact:</span> 
+                <a href="tel:+6582998460" class="value link">82998460</a>
+            </div>
+            <div>
+                <span class="label">WhatsApp:</span> 
+                <a href="https://wa.me/6582998460" class="value link" target="_blank">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const cards = document.querySelectorAll('.card');
+
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+
+            cards.forEach(card => {
+                const name = card.getAttribute('data-name').toLowerCase();
+                const pizza = card.getAttribute('data-pizza').toLowerCase();
+
+                if (name.includes(searchTerm) || pizza.includes(searchTerm)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
